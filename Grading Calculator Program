@@ -1,0 +1,71 @@
+// Name: Jakwon Cross
+// Title: Grading Calculator Program
+// Date: 5/28/2017
+/* Instructions: Write a program that allows the user to enter the grade scored in a programming class (0 - 100).
+If the user scored a 100 then notify the user that they got a perfect score.
+
+★ Modify the program so that if the user scored a 90-100 it informs the user that they scored an A.
+
+★★ Modify the program so that it will notify the user of their letter grade 0-59 F 60-69 D 70-79 C 80-89 B 90-100 A.
+
+★★★ Modify the program so the user can input multipule of grades using a loop.
+
+★★★★ Modify the program so that the user can input their name at the beginning of the grading program.
+
+★★★★★★ Modify the program so that the user puts all the grades in a list and gives out the average grade in class.
+*/
+
+
+#include <iostream>
+#include <string>
+#include <Windows.h>
+
+using namespace std;
+
+int main() {
+
+	int gradeScored[] = {59, 36, 25, 75, 98};
+	string userName;
+
+	cout << "Enter name: ";
+	/*cin >> userName;*/
+	getline(cin, userName);	// Gets whitespaces that cin >> userName; doesnt get.
+	cout << userName << endl;
+	for (int i = 0; i < 5; i++) {
+		cout << gradeScored[i] << endl;
+	}
+
+
+	//for (int i = 0; i < 5; i++) {
+	//	cout << "Please enter the grade scored on the test: ";
+	//	cin >> gradeScored[i];
+
+	//	if (gradeScored[i] == 100) {
+	//		cout << "Your score was perfect." << "\n" << "Congrats. A+" << endl;
+	//	}
+	//	if (gradeScored[i] <= 100 && gradeScored[i] >= 90) {
+	//		cout << "Your score is an A" << endl;
+	//	}
+	//	if (gradeScored[i] <= 89 && gradeScored[i] >= 80) {
+	//		cout << "Your score is an B" << endl;
+	//	}
+	//	if (gradeScored[i] <= 79 && gradeScored[i] >= 70) {
+	//		cout << "Your score is a C" << endl;
+	//	}
+	//	if (gradeScored[i] <= 69 && gradeScored[i] >= 60) {
+	//		cout << "Your score is a D" << endl;
+	//	}
+	//	if (gradeScored[i] <= 59 && gradeScored[i] >= 0) {
+	//		cout << "Your score is a F" << endl;
+	//	}
+	//	for (int j = 0; j < 5; j++) {
+	//		cout << "The grade are: " << gradeScored[i] << endl;
+	//	}
+	//}
+	
+
+
+	system("pause");
+
+	return 0;
+}
